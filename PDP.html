@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Description Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .carousel-inner img {
+        height: 400px;
+        object-fit: cover;
+      }
+      .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+      }
+      .footer a {
+        color: #6c757d;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">BuildCraft</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div
+            id="productCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="pic1.webp"
+                  class="d-block w-100"
+                  alt="Product Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="pic3.webp"
+                  class="d-block w-100"
+                  alt="Product Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="pic3.jpg"
+                  class="d-block w-100"
+                  alt="Product Image 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>LEGO</h1>
+          <p class="text-muted">Build Dreams, Brick by Brick</p>
+          <h2 class="text-success">$1.99</h2>
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-check-circle text-success"></i> Limitless
+              Creativity
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success"></i> Durable &
+              High-Quality
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success"></i> Educational Fun
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success"></i> Collectible Sets
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="accordion" id="productAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="descriptionHeading">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#descriptionCollapse"
+                aria-expanded="true"
+                aria-controls="descriptionCollapse"
+              >
+                The Story Behind
+              </button>
+            </h2>
+            <div
+              id="descriptionCollapse"
+              class="accordion-collapse collapse show"
+              aria-labelledby="descriptionHeading"
+            >
+              <div class="accordion-body">
+                LEGO is the ultimate platform for creativity and innovation.
+                With precision-crafted bricks, it empowers builders of all ages
+                to turn their imaginations into reality. Its versatile design
+                fosters hands-on learning, problem-solving, and storytelling.
+                Whether constructing architectural wonders, exploring themed
+                sets, or designing original creations, LEGO encourages growth
+                and creativity. Durable, high-quality, and endlessly reusable,
+                LEGO is more than a toy—it’s a lifelong experience
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="specificationsHeading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#specificationsCollapse"
+                aria-expanded="false"
+                aria-controls="specificationsCollapse"
+              >
+                Product Features & Specifications
+              </button>
+            </h2>
+            <div
+              id="specificationsCollapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="specificationsHeading"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    Material: High-quality ABS plastic, non-toxic, and safe for
+                    children.
+                  </li>
+                  <li>
+                    Compatibility: Works seamlessly with all LEGO bricks and
+                    sets.
+                  </li>
+                  <li>
+                    Durability: Long-lasting design for repeated assembly and
+                    play.
+                  </li>
+                  <li>
+                    Recommended Age: Suitable for ages 4+ (varies by set).
+                  </li>
+                  <li>
+                    Color: Vibrant, fade-resistant colors for a lasting
+                    experience.
+                  </li>
+                  <li>Packaging: Eco-friendly and recyclable materials.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <p>Let's Build Together</p>
+        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+        <p class="mt-3">Bringing Imagination to Life</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  </body>
+</html>
